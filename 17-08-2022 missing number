@@ -1,0 +1,21 @@
+#include<stdio.h>
+void main()
+{
+    int k,i,j=0;
+    scanf("%d",&k);
+    int a[k];
+    for(i=0;i<k-1;i++)
+        scanf("%2d",&a[i]);
+    for(i=0;i<k;i++)
+    {
+          j++;
+          if(a[j]==(a[i]+1))
+            continue;
+          else
+          {
+            printf("%d",a[i]+1);
+            break;
+          }
+    }
+    
+}
