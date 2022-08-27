@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<string.h>
+void main()
+{
+char a[20];
+int i,j,n,c=0,k;
+printf("enter the string\n");
+gets(a);
+n=strlen(a);
+k=n-1;a
+for(i=0;i<k/2;i++)
+{
+for(j=k-i;j>0;j--)
+if(a[i]==a[j]){
+c++;
+break;}
+}
+if(c==(n-1)/2)
+printf("PALINDROME");
+else
+printf("NOT A PALINDROME");
+}
