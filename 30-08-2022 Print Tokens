@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int i;
+    char sin[1000];
+    scanf("%[^\n]s",sin);
+    for(i=0;sin[i]!='\0';i++)
+    {
+       if(sin[i]==' ')
+          printf("\n");
+       else
+          printf("%c",sin[i]);
+    }
+    return 0;
+}
