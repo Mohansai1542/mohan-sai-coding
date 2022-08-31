@@ -1,0 +1,15 @@
+#include<stdio.h>
+void main()
+{
+    char s[100];
+    int i,n;
+    gets(s);
+     n=strlen(s);
+    for(i=0;i<n;i++)
+    {
+        if(s[i]=='a'||s[i]=='A')
+            printf("A");
+        else
+            printf("%c",s[i]);
+    }
+}
