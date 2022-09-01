@@ -1,0 +1,13 @@
+#include<stdio.h>
+int evodd(n)
+{
+    if(n%2==0) return(0);
+    else return(1);
+}
+void main()
+{
+    int n;
+    scanf("%d",&n);
+    if(evodd(n)==0) printf("Even");
+    if(evodd(n)==1) printf("Odd");
+}
