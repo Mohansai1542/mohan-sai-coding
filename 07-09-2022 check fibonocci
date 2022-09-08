@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+void fibcheck(int a, int b, int n)
+{
+    int c;
+    if(n==0||n==1) printf("Yes");
+    else{
+       while(b>0)
+       {
+         c=a+b;
+         if(n==c){ printf("YES"); break; }
+         else if(n!=c&&n<c){ printf("NO"); break; }
+         a=b;
+         b=c;
+       }
+    }
+}
+int main() {
+    int a=0,b=1,n;
+    scanf("%d",&n);
+    fibcheck(a,b,n);
+    return 0;
+}
