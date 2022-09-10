@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main() {
+    int pos,i,n,value,ch,arr[100];
+    printf("Enter the elements in array");
+    scanf("%d",&n);
+    arr[n];
+    for(i=0;i<n;i++)
+    {
+        printf("Value for index %d :",i);
+        scanf("%d",&arr[i]);
+    }
+    printf("Insert element at end \n");
+    scanf("%d",&value);
+    arr[n]=value;
+    printf("Element %d is inserted at index \n",value,n);
+    printf("New array is \n");
+    for(i=0;i<n+1;i++)
+    {
+        printf("%d\t",arr[i]);
+    }
+
+    return 0;
+}
